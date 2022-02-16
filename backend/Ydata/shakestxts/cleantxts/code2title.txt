@@ -1,0 +1,42 @@
+R2,Richard II
+JC,Julius Caesar
+Cor,Coriolanus
+Tro,Troilus and Cressida
+H8,Henry VIII
+Shr,The Taming of the Shrew
+3H6,Henry VI, Part 3
+Per,Pericles, Prince of Tyre
+Jn,King John
+1H6,Henry VI, Part 1
+Ado,Much Ado About Nothing
+H5,Henry V
+Ant,Antony and Cleopatra
+R3,Richard III
+2H4,Henry IV, Part 2
+TN,Twelfth Night
+Mac,Macbeth
+Luc,Lucrece
+Ham,Hamlet
+Err,The Comedy of Errors
+MV,The Merchant of Venice
+Tmp,The Tempest
+2H6,Henry VI, Part 2
+MND,A Midsummer Night’s Dream
+LLL,Love’s Labor’s Lost
+MM,Measure for Measure
+Rom,Romeo and Juliet
+Wiv,The Merry Wives of Windsor
+Lr,King Lear
+Tim,Timon of Athens
+AWW,All’s Well That Ends Well
+Son,Sonnets
+Tit,Titus Andronicus
+AYL,As You Like It
+TNK,The Two Noble Kinsmen
+Oth,Othello
+1H4,Henry IV, Part I
+PhT,The Phoenix and Turtle
+Cym,Cymbeline
+WT,The Winter’s Tale
+TGV,The Two Gentlemen of Verona
+Ven,Venus and Adonis

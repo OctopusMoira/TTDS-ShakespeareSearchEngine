@@ -1,0 +1,75 @@
+version: '2.7'
+
+services:
+
+  api:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    command: gunicorn --bind 0.0.0.0:5000 --timeout 60 --worker-class eventlet --threads 2 app:app
+    ports:
+      - "5000:5000"
+    environment:
+      MONGODB_HOST: mongodb
+      MONGODB_USERNAME: fellow
+      MONGODB_PASSWORD: status01corp
+    volumes:
+      - appdata:/var/www/
+    depends_on: 
+      - mongodb
+    networks:
+      - frontend
+      - backend
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  client:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - frontend
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  mongodb:
+    image: mongo
+    container_name: mongo
+    restart: unless-stopped
+    command: mongod --auth
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: moira
+      MONGO_INITDB_ROOT_PASSWORD: rootlogin
+      MONGO_INITDB_DATABASE: searchin
+      MONGODB_DATA_DIR: /data/db
+    volumes:
+      - mongodbdata:/data/db
+    networks:
+      - backend
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  backend:
+    driver: bridge
+  frontend:
+    driver: bridge
+volumes:
+  mongodbdata:
+    driver: local
+  appdata:
+    driver: local

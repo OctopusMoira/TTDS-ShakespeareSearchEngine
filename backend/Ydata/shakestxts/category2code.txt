@@ -1,0 +1,4 @@
+Comedy: Tro, Shr, Per, Ado, TN, Err, MV, Tmp, MND, LLL, MM, Wiv, AWW, AYL, Cym, TGV, WT, TNK
+History: R2, H8, 3H6, Jn, 1H6, H5, R3, 2H4, 2H6, 1H4
+Tragedy: JC, Cor, Ant, Mac, Ham, Rom, Lr, Tim, Tit, Oth
+Poetry: Luc, Son, PhT, Ven
